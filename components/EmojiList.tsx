@@ -1,11 +1,11 @@
 import { Image } from "expo-image";
 import { useState } from "react";
 import {
-    FlatList,
-    ImageSourcePropType,
-    Platform,
-    Pressable,
-    StyleSheet,
+  FlatList,
+  ImageSourcePropType,
+  Platform,
+  Pressable,
+  StyleSheet,
 } from "react-native";
 
 type Props = {
@@ -16,11 +16,11 @@ type Props = {
 export default function EmojiList({ onSelect, onCloseModal }: Props) {
   const [emoji] = useState<ImageSourcePropType[]>([
     require("../assets/images/emoji1.png"),
-    require("../assets/images/emoji1.png"),
-    require("../assets/images/emoji1.png"),
-    require("../assets/images/emoji1.png"),
-    require("../assets/images/emoji1.png"),
-    require("../assets/images/emoji1.png"),
+    require("../assets/images/Labrador Dog With Hearts.png"),
+    require("../assets/images/loudly-crying-face_1f62d.gif"),
+    require("../assets/images/emoji-mashup.png"),
+    require("../assets/images/Heart on Fire.png"),
+    require("../assets/images/Books.png"),
   ]);
 
   return (
